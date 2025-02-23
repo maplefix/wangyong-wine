@@ -3,49 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>王永烟酒 · 三十年高端酒品专家</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <title>王永烟酒 · 五粮液官方授权经销商</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
     <style>
         :root {
-            --gold: #C5A47E;
-            --dark-bg: #1A1A1A;
-            --card-bg: #252525;
+            --primary-red: #B31917;
+            --gold: #D4AF37;
+            --light-bg: #F9F6F0;
         }
         body {
             font-family: 'Roboto', sans-serif;
-            background: var(--dark-bg);
-            color: #fff;
+            background: var(--light-bg);
+            color: #333;
             margin: 0;
             line-height: 1.6;
         }
         .header {
-            background: linear-gradient(rgba(0,0,0,0.8), url('texture.jpg');
-            padding: 4rem 1rem;
-            border-bottom: 3px solid var(--gold);
+            background: linear-gradient(135deg, var(--primary-red) 0%, #8B0000 100%);
+            padding: 3rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
         h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
+            font-family: 'Noto Serif SC', serif;
+            font-size: 2.8rem;
+            color: white;
+            margin: 1rem 0;
             letter-spacing: 2px;
-            margin: 0.5rem 0;
-            color: var(--gold);
         }
         .badge {
             background: var(--gold);
-            color: #000;
-            padding: 0.5rem 1.5rem;
-            border-radius: 20px;
+            color: #fff;
+            padding: 0.8rem 2rem;
+            border-radius: 30px;
             display: inline-block;
             font-weight: 500;
             margin: 1rem 0;
+            font-size: 1.1rem;
         }
         .card {
-            background: var(--card-bg);
-            border-radius: 12px;
+            background: white;
+            border-radius: 15px;
             padding: 2rem;
             margin: 2rem auto;
             max-width: 1200px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border: 1px solid rgba(0,0,0,0.05);
         }
         .grid {
             display: grid;
@@ -54,99 +57,155 @@
             padding: 2rem 0;
         }
         .feature-icon {
-            width: 60px;
-            height: 60px;
-            margin-bottom: 1rem;
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin: 1rem 0;
         }
-        .wechat-section {
-            background: #252525;
-            padding: 3rem 1rem;
+        .product-list {
+            text-align: left;
+            padding: 0;
+            margin: 1.5rem 0;
+        }
+        .product-list li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #eee;
+            font-size: 1.1rem;
+        }
+        .qr-section {
             text-align: center;
+            padding: 3rem 1rem;
         }
         .qr-frame {
             border: 3px solid var(--gold);
-            border-radius: 12px;
-            padding: 1rem;
+            border-radius: 15px;
+            padding: 1.5rem;
             display: inline-block;
-            margin: 1rem 0;
+            margin: 1.5rem 0;
+            background: white;
+        }
+        .qr-frame img {
+            width: 220px;
+            height: 220px;
+            object-fit: contain;
+            display: block;
         }
         .cta-button {
-            background: var(--gold);
-            color: #000;
-            padding: 1rem 2.5rem;
+            background: var(--primary-red);
+            color: white;
+            padding: 1rem 3rem;
             border-radius: 30px;
             text-decoration: none;
             font-weight: 500;
             display: inline-block;
             margin: 1rem 0;
             transition: transform 0.3s;
+            font-size: 1.1rem;
         }
         .cta-button:hover {
-            transform: translateY(-3px);
+            transform: translateY(-2px);
         }
         .tel-link {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             color: var(--gold);
             text-decoration: none;
             margin: 1rem 0;
             display: block;
+            font-weight: 500;
+        }
+        .section-title {
+            font-family: 'Noto Serif SC', serif;
+            color: var(--primary-red);
+            font-size: 2rem;
+            margin: 2rem 0;
+            position: relative;
+            display: inline-block;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60%;
+            height: 3px;
+            background: var(--gold);
+            margin: 0.5rem auto;
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <div class="card" style="background: transparent; box-shadow: none;">
-            <h1>王永烟酒</h1>
-            <div class="badge">始于1993 · 三十年匠心传承</div>
-            <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto;">
-                专注高端酒品供应，厂家直供正品保障，假一赔十
-            </p>
-            <a href="tel:13784094759" class="tel-link">
-                📞 服务专线：137-8409-4759
-            </a>
-        </div>
+        <h1>王永烟酒</h1>
+        <div class="badge">三十年品牌认证</div>
+        <p style="color: rgba(255,255,255,0.9); font-size: 1.1rem; max-width: 600px; margin: 0 auto;">
+            五粮液官方授权经销商 · 假一赔十 · 厂家直供
+        </p>
+        <a href="tel:13784094759" class="tel-link" style="color: var(--gold);">
+            📞 服务专线：137-8409-4759
+        </a>
     </div>
 
     <div class="card">
-        <h2 style="color: var(--gold); text-align: center; margin-bottom: 2rem;">核心产品与服务</h2>
+        <h2 class="section-title">核心产品</h2>
         <div class="grid">
             <div>
-                <img src="https://raw.githubusercontent.com/maplefix/wangyong-wine/refs/heads/main/%E9%97%A8%E5%BA%97%E5%9B%BE.jpg" alt="icon" class="feature-icon">
-                <h3>主营精品</h3>
-                <ul style="text-align: left; list-style: none; padding: 0;">
+                <img src="https://raw.githubusercontent.com/maplefix/wangyong-wine/refs/heads/main/%E9%97%A8%E5%BA%97%E5%9B%BE.jpg" 
+                     alt="门店展示" 
+                     class="feature-icon">
+                <h3 style="color: var(--primary-red); margin: 1.5rem 0;">主营精品</h3>
+                <ul class="product-list">
                     <li>✅ 五粮液全系正品（整箱特惠）</li>
                     <li>✅ 茅台/国窖/中华等名品</li>
                     <li>✅ 企业礼品定制服务</li>
                 </ul>
             </div>
-            <div>
-                <img src="icon-service.png" alt="icon" class="feature-icon">
-                <h3>尊享服务</h3>
-                <ul style="text-align: left; list-style: none; padding: 0;">
-                    <li>✔ 全程保真溯源系统</li>
-                    <li>✔ 满额免费专车配送</li>
-                    <li>✔ 高价现金上门回收</li>
-                </ul>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2 class="section-title">尊享服务</h2>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                <div>
+                    <h3 style="color: var(--primary-red);">🛒 采购服务</h3>
+                    <ul class="product-list">
+                        <li>✔ 整箱批发优惠</li>
+                        <li>✔ 保真溯源系统</li>
+                        <li>✔ 专业选品指导</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 style="color: var(--primary-red);">🚚 配送服务</h3>
+                    <ul class="product-list">
+                        <li>✔ 满2000元免费配送</li>
+                        <li>✔ 专业防震包装</li>
+                        <li>✔ 全程保价运输</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="wechat-section">
+    <div class="qr-section">
         <div class="card" style="max-width: 600px;">
-            <h3 style="color: var(--gold);">会员专属福利</h3>
+            <h2 class="section-title">会员专属福利</h2>
             <div class="qr-frame">
-                <img src="https://raw.githubusercontent.com/maplefix/wangyong-wine/refs/heads/main/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20250223170523.jpg" alt="微信" style="width: 200px; border-radius: 8px;">
+                <img src="https://raw.githubusercontent.com/maplefix/wangyong-wine/refs/heads/main/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20250223170523.jpg" 
+                     alt="微信二维码">
             </div>
-            <p style="font-size: 1.1rem;">
+            <p style="font-size: 1.1rem; margin: 1.5rem 0;">
                 扫码添加微信尊享：<br>
-                <span style="color: var(--gold);">① 新客到店礼金 ② 老客专属折扣</span>
+                <span style="color: var(--primary-red); font-weight: 500;">
+                    ① 新客到店礼金 ② 老客专属折扣
+                </span>
             </p>
             <a href="#wechat" class="cta-button">立即领取福利</a>
         </div>
     </div>
 
-    <div style="padding: 2rem; text-align: center; background: #000;">
-        <p>© 2023 王永烟酒 · 高端酒品供应专家</p>
+    <div style="padding: 2rem; text-align: center; background: var(--primary-red); color: white;">
+        <p style="margin: 0.5rem 0;">© 2023 王永烟酒 · 五粮液官方授权经销商</p>
+        <p style="margin: 0.5rem 0; font-size: 0.9rem;">地址：XX市XX区XX路XX号</p>
     </div>
 </body>
 </html>
